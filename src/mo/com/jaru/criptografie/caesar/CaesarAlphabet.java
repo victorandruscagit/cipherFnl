@@ -24,5 +24,26 @@ public class CaesarAlphabet {
             charIndexes.put(alphabet.get(i), i);
 
         }
+
+    }
+
+    public Character getCharByIndex(int index) {
+        if (index < 0 || index > alphabet.size()) {
+            throw new CaesarAlhpabetException("Invalid index.Index : " + index +
+                    " is valid from 0 to " + alphabet.size());
+        }
+        return alphabet.get(index);
+    }
+
+    public int getCharacterIndex(Character character) {
+        if (!charIndexes.containsKey(character)) {
+            throw new CaesarAlhpabetException("Invalid character.Char : " + character + ".");
+        }
+        return charIndexes.get(character);
+
+    }
+
+    public int getSize() {
+        return alphabet.size();
     }
 }
