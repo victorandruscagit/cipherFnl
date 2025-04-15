@@ -12,6 +12,7 @@ public class FileNameValidator {
 
     private static final List<String> FORBIDDEN_DIRS_FILES =
             List.of(".bash_history", ".bash_profile", "etc", "proc");
+
     public static final String SYSTEM_SEPARATOR_PROPERTY = System.getProperty("file.separator");
 
     public void validateForWriting(String fileName) {
