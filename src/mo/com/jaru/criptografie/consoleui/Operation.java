@@ -30,10 +30,10 @@ public enum Operation {
 
     public static Operation getByNumber(int number) {
         for (Operation operation : values()) {
-            if (operation.getNumber()==number) {
-                return  operation;
+            if (operation.getNumber() == number) {
+                return operation;
             }
         }
-        throw new IllegalAccessException("Wrong number for operation");
+        throw new IllegalArgumentException("Wrong number for operation");
     }
 }

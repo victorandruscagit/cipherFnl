@@ -6,6 +6,7 @@ import mo.com.jaru.criptografie.file.FileProcessor;
 import java.util.List;
 
 public class CaesarCoder {
+
     private FileNameValidator validator;
     private FileProcessor fileProcessor;
     private CaesarCipher caesarCipher;
