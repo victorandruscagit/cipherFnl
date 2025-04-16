@@ -2,6 +2,7 @@ package mo.com.jaru.criptografie.caesar;
 
 
 public class CaesarCipher {
+
     private final CaesarAlphabet caesarAlphabet;
 
 

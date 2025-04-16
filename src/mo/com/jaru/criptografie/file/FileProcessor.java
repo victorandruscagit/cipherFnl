@@ -10,12 +10,6 @@ public class FileProcessor {
     private static final StandardOpenOption[] FILE_WRITE_OPTIONS =
             {StandardOpenOption.CREATE, StandardOpenOption.APPEND};
 
-    /**
-     *
-     * @param fileName
-     * @return
-     * @throws FileProcessingException (maybe).
-     */
     public List<String> readFile(String fileName) {
         Path filePath = Path.of(fileName);
         try {
